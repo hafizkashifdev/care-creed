@@ -94,8 +94,8 @@ const CareLibraryRequiredLicensesInformationCommissionersOfficeICO: NextPage =
     }, [router]);
 
     const onWdgtContainerClick20 = useCallback(() => {
-      router.push("CL-2/l-a-r-s-courses-classification");
-    }, [router]);
+      setColorLegendsKeyOpen(true);
+    }, []);
 
     const onWdgtContainerClick21 = useCallback(() => {
       window.open(
@@ -1895,7 +1895,7 @@ const CareLibraryRequiredLicensesInformationCommissionersOfficeICO: NextPage =
         </Box>
         {isColorLegendsKeyOpen && (
           <PortalPopup
-            overlayColor="rgba(113, 113, 113, 0.3)"
+            overlayColor="#000000"
             placement="Centered"
             onOutsideClick={closeColorLegendsKey}
           >
